@@ -5,6 +5,7 @@
 </ion-header>
 
 <ion-content class="ion-padding">
+  <h1>Login</h1>
   <!-- Add a form to the template. ngSubmit event is bound to login() method
     which will be added to the component class. formGroup directive is bound to
     credentials property which will be added to the component class. -->
@@ -44,8 +45,12 @@
       [disabled]="!credentials.valid"
       >Log in</ion-button>
   </form>
+  <ion-label></ion-label>
+  <ion-button 
+  (click)="sendPasswordReset()"
+  >Send Reset Password Email</ion-button>
 
-  <hr>
+  <h1>Registration</h1>
   <form (ngSubmit)="register()" [formGroup]="credentials">
     <ion-item class="ion-margin-bottom">
       <ion-input

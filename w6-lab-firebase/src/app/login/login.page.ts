@@ -92,7 +92,7 @@ export class LoginPage {
   // This method will send a password reset email to the email address passed as parameter.
 
   async sendPasswordReset() {
-    
+    this.authService.passReset(this.email.value);
   }
 
   // Show an alert message with the given header and message.

@@ -26,7 +26,7 @@ export class LoginPage {
   private router = inject(Router); // Inject the Router to redirect after successful login
 
   credentials = this.fb.nonNullable.group({
-    email: ['daniel.cregg@atu.ie', [Validators.required, Validators.email]],
+    email: ['oisinhearne@gmail.com', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(6)]],
   });
 

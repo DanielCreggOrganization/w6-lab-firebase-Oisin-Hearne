@@ -1,4 +1,3 @@
-// src/app/services/auth.service.ts
 import { Injectable, inject } from '@angular/core';
 import {
   Auth, // Used to get the current user and subscribe to the auth state.

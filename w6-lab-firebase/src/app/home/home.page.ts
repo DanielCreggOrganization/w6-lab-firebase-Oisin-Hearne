@@ -121,6 +121,7 @@ export class HomePage implements AfterViewInit {
   // This method is used to update the checkbox in the UI when the user toggles the checkbox
   async checkboxTick(task: Task) {
     task.completed = task.completed ? false : true; //Flip the value.
+    console.log(task.content)
     this.tasksService.updateTask(task)
   }
 

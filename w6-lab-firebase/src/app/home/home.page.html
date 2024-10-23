@@ -20,13 +20,13 @@
         <ion-item>
           <!-- Display the task content -->
           <ion-label>
-            <h3>{{task.content}}</h3>
+            {{task.content}} 
           </ion-label>
           <!-- Display a checkbox to mark the task as completed. Use event binding that listens for the ionChange event. 
                This event is emitted by Ionic components when their value changes (i.e. the tick box is checked or unchecked)
                [checked]="task.completed" is an example of property binding.the checked property of an element is being bound
                to the completed property of the task object   -->
-  
+               <ion-checkbox (click)="checkboxTick(task)" checked="{{task.completed}}"></ion-checkbox>
         </ion-item>
         <!-- Create a sliding button to edit the task title or delete the task -->
         <ion-item-options side="end">
